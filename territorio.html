@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#10115f" />
+    <title>Onde elas estão • Ciência Delas</title>
+    <link rel="stylesheet" href="internal.css" />
+    <script src="data/pesquisadoras.js" defer></script><script src="app.js" defer></script>
+  </head>
+  <body class="internal-page" data-page="territorio">
+    <main class="internal-shell">
+      <nav class="internal-topbar" aria-label="Navegação principal">
+        <a class="mini-brand" href="index.html" aria-label="Ciência Delas — início"><img src="assets/logo observatório sem texto.jpeg" alt="" /><span><strong>Observatório</strong> de CT&amp;I da Bahia</span></a>
+        <div class="top-actions"><button class="touch-button" type="button" data-back>← <span class="button-label">Voltar</span></button><button class="touch-button touch-button--primary" type="button" data-home>⌂ <span class="button-label">Início</span></button></div>
+      </nav>
+      <header class="page-hero">
+        <span class="page-kicker">Instituições • cidades • territórios</span>
+        <h1>Onde elas estão</h1>
+        <p>Explore os territórios e instituições onde mulheres fazem ciência na Bahia.</p>
+        <span class="demo-note">Base fictícia para demonstração do layout</span>
+      </header>
+      <section aria-labelledby="territory-title">
+        <div class="results-heading">
+          <h2 id="territory-title">Explore a rede</h2>
+          <div class="mode-switch" aria-label="Modo de visualização"><button class="is-active" type="button" data-mode="instituicao">Por instituição</button><button type="button" data-mode="cidade">Por cidade</button></div>
+        </div>
+        <div class="territory-grid" id="territory-grid"></div>
+      </section>
+      <section class="map-placeholder" aria-labelledby="map-title">
+        <h2 id="map-title">Mapa interativo da Bahia</h2>
+        <p>Espaço preparado para a futura visualização geográfica das instituições e pesquisadoras.</p>
+      </section>
+    </main>
+  </body>
+</html>

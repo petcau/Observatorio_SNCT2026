@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#10115f" />
+    <meta name="description" content="Um retrato das mulheres que fazem ciência, tecnologia e inovação na Bahia." />
+    <title>Ciência em números • Ciência Delas</title>
+    <link rel="stylesheet" href="internal.css" />
+    <script src="app.js" defer></script>
+    <script src="numeros.js" defer></script>
+  </head>
+  <body class="internal-page numbers-page" data-page="numeros">
+    <main class="internal-shell numbers-shell">
+      <nav class="internal-topbar" aria-label="Navegação principal">
+        <a class="mini-brand" href="index.html" aria-label="Ciência Delas — início">
+          <img src="assets/logo observatório sem texto.jpeg" alt="" />
+          <span><strong>Observatório</strong> de CT&amp;I da Bahia</span>
+        </a>
+        <div class="top-actions">
+          <button class="touch-button" type="button" data-back>← <span class="button-label">Voltar</span></button>
+          <button class="touch-button touch-button--primary" type="button" data-home>⌂ <span class="button-label">Início</span></button>
+        </div>
+      </nav>
+
+      <header class="numbers-hero reveal-block">
+        <span class="page-kicker">CIÊNCIA DELAS</span>
+        <h1>Ciência em números</h1>
+        <p class="numbers-hero__lead">Um retrato das mulheres que fazem ciência, tecnologia e inovação na Bahia.</p>
+        <p class="numbers-hero__context">Dados referentes às pesquisadoras identificadas na base do Observatório de CT&amp;I da Bahia.</p>
+        <div class="data-status" id="data-status" role="status" aria-live="polite">
+          <span class="data-status__pulse" aria-hidden="true"></span> Preparando o infográfico...
+        </div>
+      </header>
+
+      <div id="numbers-content" hidden>
+        <section class="infographic-section reveal-block" aria-labelledby="who-title">
+          <div class="infographic-heading">
+            <span>01</span>
+            <div><h2 id="who-title">Quem são elas</h2><p>Mulheres que constroem conhecimento em diferentes instituições, territórios e áreas da ciência.</p></div>
+          </div>
+          <div class="portrait-grid" id="portrait-stats"></div>
+        </section>
+
+        <section class="science-production reveal-block" aria-labelledby="science-title">
+          <div class="science-production__intro">
+            <span class="section-tag">02 • PRODUÇÃO CIENTÍFICA</span>
+            <h2 id="science-title">Conhecimento que se transforma em produção científica</h2>
+          </div>
+          <div class="article-total" id="article-total"></div>
+          <p class="science-production__text">Conhecimento produzido e compartilhado em diferentes áreas da ciência.</p>
+          <div class="publication-secondary" id="publication-secondary"></div>
+        </section>
+
+        <section class="infographic-section reveal-block" aria-labelledby="technology-title">
+          <div class="infographic-heading">
+            <span>03</span>
+            <div><h2 id="technology-title">Ciência que também vira tecnologia</h2><p>O conhecimento também se transforma em soluções, tecnologias e ativos de inovação.</p></div>
+          </div>
+          <div class="technology-grid" id="technology-stats"></div>
+          <div class="technology-notes" id="technology-notes"></div>
+        </section>
+
+        <section class="infographic-section reveal-block" aria-labelledby="institutions-title">
+          <div class="infographic-heading">
+            <span>04</span>
+            <div><h2 id="institutions-title">Onde a ciência delas acontece</h2><p>Instituições que concentram pesquisadoras presentes na base.</p></div>
+          </div>
+          <div class="ranking-list" id="institution-ranking"></div>
+          <button class="touch-button ranking-more" id="institutions-more" type="button" hidden>Ver todas as instituições ↓</button>
+        </section>
+
+        <section class="infographic-section reveal-block" aria-labelledby="areas-title">
+          <div class="infographic-heading">
+            <span>05</span>
+            <div><h2 id="areas-title">A ciência delas é diversa</h2><p>As pesquisadoras atuam em diferentes campos do conhecimento.</p></div>
+          </div>
+          <div class="area-ranking" id="area-ranking"></div>
+          <p class="method-note">Uma mesma pesquisadora pode atuar em mais de uma área do conhecimento.</p>
+        </section>
+
+        <section class="infographic-section reveal-block" aria-labelledby="themes-title">
+          <div class="infographic-heading">
+            <span>06</span>
+            <div><h2 id="themes-title">Temáticas que conectam pesquisadoras</h2><p>Assuntos que aproximam mulheres de diferentes instituições e áreas do conhecimento.</p></div>
+          </div>
+          <div class="thematic-ranking" id="thematic-ranking"></div>
+          <div class="section-footer-action"><a class="touch-button" href="tematicas.html">Ver todas as temáticas →</a></div>
+          <p class="method-note">As temáticas foram agrupadas a partir das informações disponíveis nos currículos e registros da base, para fins de visualização e exploração.</p>
+        </section>
+
+        <section class="circulation-block reveal-block" aria-labelledby="circulation-title">
+          <div><span class="section-tag">07 • PRODUÇÃO E IMPACTO</span><h2 id="circulation-title">Conhecimento que circula</h2></div>
+          <div class="circulation-grid" id="bibliometric-stats"></div>
+          <p>Indicadores bibliométricos calculados a partir dos registros disponíveis na base.</p>
+        </section>
+
+        <details class="data-methodology reveal-block">
+          <summary>Sobre os dados <span aria-hidden="true">＋</span></summary>
+          <div>
+            <p>Os dados são provenientes da base do Observatório de CT&amp;I da Bahia. Esta página considera as pesquisadoras identificadas na base e os totais refletem apenas os registros disponíveis.</p>
+            <p>Uma pesquisadora pode aparecer em mais de uma área. Indicadores bibliométricos podem variar conforme a atualização das fontes. As temáticas são agrupamentos analíticos para visualização e exploração.</p>
+          </div>
+        </details>
+
+        <section class="numbers-cta reveal-block" aria-labelledby="cta-title">
+          <span aria-hidden="true">✦</span>
+          <h2 id="cta-title">Ciência feita por mulheres gera conhecimento, inovação e transformação para a Bahia.</h2>
+          <p>Conheça quem são essas pesquisadoras e descubra o que elas pesquisam.</p>
+          <a class="touch-button numbers-cta__button" href="cientistas.html">Explore as pesquisadoras →</a>
+        </section>
+      </div>
+
+      <footer class="numbers-footer">
+        <div><strong>Observatório de CT&amp;I da Bahia</strong><span>Ciência Delas • SNCT 2026</span></div>
+        <div class="numbers-footer__logos" aria-label="Espaço para logos institucionais"></div>
+      </footer>
+    </main>
+  </body>
+</html>

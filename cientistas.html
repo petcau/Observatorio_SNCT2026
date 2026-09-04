@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#10115f" />
+    <title>Conheça as cientistas • Ciência Delas</title>
+    <link rel="stylesheet" href="internal.css" />
+    <script src="data/pesquisadoras.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body class="internal-page" data-page="cientistas">
+    <main class="internal-shell">
+      <nav class="internal-topbar" aria-label="Navegação principal">
+        <a class="mini-brand" href="index.html" aria-label="Ciência Delas — início">
+          <img src="assets/logo observatório sem texto.jpeg" alt="" />
+          <span><strong>Observatório</strong> de CT&amp;I da Bahia</span>
+        </a>
+        <div class="top-actions">
+          <button class="touch-button" type="button" data-back><span aria-hidden="true">←</span><span class="button-label">Voltar</span></button>
+          <button class="touch-button touch-button--primary" type="button" data-home><span aria-hidden="true">⌂</span><span class="button-label">Início</span></button>
+        </div>
+      </nav>
+
+      <header class="page-hero">
+        <span class="page-kicker">Pessoas • trajetórias • conhecimento</span>
+        <h1 id="listing-title">Conheça as cientistas</h1>
+        <p id="listing-subtitle">Descubra mulheres que fazem ciência, tecnologia e inovação na Bahia.</p>
+        <span class="demo-note">Base fictícia para demonstração do layout</span>
+      </header>
+
+      <section class="filter-panel" aria-label="Filtros de pesquisadoras">
+        <div class="search-row">
+          <div class="field">
+            <label for="search">Busque pelo nome da pesquisadora</label>
+            <input id="search" type="search" placeholder="Digite um nome" autocomplete="off" />
+          </div>
+          <button class="touch-button touch-button--text" id="clear-filters" type="button">Limpar filtros</button>
+        </div>
+        <div class="filter-grid">
+          <div class="field"><label for="instituicao">Instituição</label><select id="instituicao"><option value="">Todas</option></select></div>
+          <div class="field"><label for="area">Área</label><select id="area"><option value="">Todas</option></select></div>
+          <div class="field"><label for="tematica">Temática</label><select id="tematica"><option value="">Todas</option></select></div>
+          <div class="field"><label for="cidade">Cidade</label><select id="cidade"><option value="">Todas</option></select></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="results-title">
+        <div class="results-heading"><h2 id="results-title">Pesquisadoras</h2><p id="result-count" aria-live="polite"></p></div>
+        <div class="researcher-grid" id="researcher-grid"></div>
+      </section>
+    </main>
+  </body>
+</html>
